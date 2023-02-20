@@ -46,7 +46,7 @@ int main(int argc,char *argv[]){
         recv_len=0;
         while(recv_len<str_len){
             recv_cnt=0;
-            while(recv<len<str_len)
+            while(recv_len<str_len)
             {
                 recv_cnt=read(sock,&message[recv_len],BUF_SIZE-1);
                 if(recv_cnt==-1)
